@@ -6,4 +6,9 @@ const checkObj = {
   };
   
   const objToArray = [];
-  // ADD CODE HERE
+  for (let key in checkObj) {
+    if (checkObj[key] >= 2) {
+      objToArray.push(checkObj[key])
+    }
+  }
+  console.log(objToArray)
